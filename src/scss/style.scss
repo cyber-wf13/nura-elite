@@ -1,0 +1,16 @@
+//Создание миксинов и переменных
+@import 'helpers/mixins';
+@import 'helpers/vars';
+
+// Объявление стилей для всего проекта
+@import 'base/global';
+@import 'base/reset';
+@import 'base/fonts';
+
+// Стили для компонентов
+
+// Стили для шаблонов страниц
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/hero';
+
