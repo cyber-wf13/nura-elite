@@ -9,6 +9,10 @@
     flex-direction: column;
     align-items: flex-end;
     flex: 0.7 0 auto;
+
+    @media (max-width: 991.98px){
+      flex-direction: column-reverse;
+    }
   }
 
   &__logo {
@@ -17,18 +21,60 @@
 
   &__contact {
     margin-bottom: 15px;
+    
+    @media (max-width: 991.98px){
+      margin: 15px 0 0;
+    }
+  }
+
+  &__burger{
+    display: none;
+    height: 50px;
+    width: 50px;
+    border: 1px solid $c-orange;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    transition: 0.3s ease-out background;
+
+    @media (max-width: 991.98px){
+      display: block;
+
+      &--active{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        z-index: 100;
+      }
+
+      &:focus{
+        background: $c-orange;
+      }
+    }
+
+    @media (any-hover:hover){
+      &:hover{
+        background: $c-orange;
+      }
+    }
+
   }
 }
 
 .contact-header {
+  position: relative;
   display: flex;
   align-items: center;
+  overflow: hidden;
 
   &__viber {
     font-size: 26px;
     color: #fff;
     cursor: pointer;
     transition: all 0.3s ease-out;
+
     @media (any-hover: hover) {
       &:hover {
         transform: scale(1.2);
@@ -49,6 +95,19 @@
     margin-left: 35px;
     cursor: pointer;
     transition: background 0.3s ease-out;
+    
+    @media (max-width: 575.98px){
+      border-radius: 50%;
+      padding: 13px;
+      font-size: 0;
+      height: 50px;
+      width: 50px;
+
+      &:focus{
+        background: $c-orange;
+      }
+    }
+
     @media (any-hover: hover) {
       &:hover {
         background: $c-orange;
@@ -58,17 +117,38 @@
 
   &__tel-icon {
     margin-right: 10px;
+    @media (max-width: 575.98px){
+      font-size: 20px;
+    }
   }
 }
 
 .nav {
   width: 100%;
+
+  @media (max-width: 991.98px){
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -1000px;
+    height: 100%;
+    z-index: 50;
+  }
 }
 
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 991.98px){
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    background: rgba($c-black, 0.8);
+    height: 100%;
+    padding: 10px;
+  }
 
   &__item {
     position: relative;
@@ -83,6 +163,12 @@
       height: 4px;
       background: $c-orange;
       width: 0;
+    }
+
+    @media (max-width: 991.98px){
+      &:nth-child(odd){
+        align-self: flex-start;
+      }
     }
 
     @media (any-hover: hover) {
