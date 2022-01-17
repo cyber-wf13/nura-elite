@@ -8,9 +8,12 @@
 @import 'base/fonts';
 
 // Стили для компонентов
+@import 'components/title';
+@import 'components/title-back';
+@import 'components/about-descr';
 
 // Стили для шаблонов страниц
 @import 'layouts/header';
 @import 'layouts/footer';
 @import 'layouts/hero';
-
+@import 'layouts/about';

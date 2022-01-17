@@ -1,0 +1,16 @@
+.title-back {
+  position: relative;
+
+  &::before{
+    content: attr(data-back-title);
+    position: absolute;
+    top: -130px;
+    left: 0;
+    width: 2000px;
+    z-index: -1;
+    font-weight: 700;
+    font-size: 287px;
+    line-height: 312px;
+    color: rgba($c-black, 0.05);
+  }
+}

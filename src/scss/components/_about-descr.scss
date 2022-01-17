@@ -1,0 +1,11 @@
+.about-descr{
+  &__title{
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  &__text{
+    min-width: 423px;
+    max-width: 617px;
+  }
+}
