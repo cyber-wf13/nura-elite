@@ -1,0 +1,116 @@
+.footer {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+
+    @media (max-width: 1199.98px) {
+      justify-content: center;
+    }
+  }
+
+  &__img {
+    @media (max-width: 1199.98px) {
+      display: none;
+    }
+  }
+
+  &__descr {
+    display: block;
+    margin: 30px 0;
+    line-height: 1.1;
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__code{
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    padding: 100px 0 72px;
+
+    @media (max-width: 1199.98px) {
+      padding: 70px 0 40px;
+    }
+
+    @media (max-width: 767.98px) {
+      padding: 40px 0 20px;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 767.98px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__nav-item {
+    font-weight: 300;
+    font-size: 20px;
+    flex: 0.1 0 auto;
+
+    @media (max-width: 767.98px) {
+      flex: 0.1 0 50%;
+
+      &:nth-child(even) {
+        text-align: right;
+      }
+    }
+  }
+
+  &__button{
+    display: none;
+    margin: 20px auto 0;
+    height: 45px;
+    width: 245px;
+    padding: 15px 20px;
+    border: none;
+    background: $c-orange;
+    font-weight: 700;
+    line-height: 100%;
+    color: $c-black;
+    cursor: pointer;
+    transition: 0.5s ease-out all;
+
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(0.9);
+        color: #fff;
+      }
+    }
+
+    @media (max-width: 1199.98px) {
+      display: block;
+    }
+
+    @media (max-width: 575.98px) {
+      margin: 10px auto 0;
+    }
+  }
+}
+
+.footer-list {
+  &__item {
+    margin: 0 0 10px;
+  }
+
+  &__item i {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+}

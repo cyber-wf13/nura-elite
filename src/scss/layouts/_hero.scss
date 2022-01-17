@@ -1,60 +1,60 @@
-.hero{
+.hero {
   min-height: 730px;
   height: 100%;
   background: url(../img/bg-main.jpg) no-repeat top left/cover;
 
-  &__main{
+  &__main {
     margin-top: 115px;
 
-    @media (max-width: 767.98px){
+    @media (max-width: 767.98px) {
       margin-top: 75px;
     }
   }
 
-  &__content{
+  &__content {
     margin-bottom: 40px;
-    @media (max-width: 1199.98px){
+    @media (max-width: 1199.98px) {
       margin-bottom: 25px;
     }
   }
 
-  &__article{
-    @media (max-width: 575.98px){
+  &__article {
+    @media (max-width: 575.98px) {
       display: none;
     }
   }
-
 }
 
-.hero-content{
+.hero-content {
   display: flex;
 
-  @media (max-width: 1199.98px){
+  @media (max-width: 1199.98px) {
     flex-direction: column;
   }
 
-  &__main{
+  &__main {
     flex: 0.7 0 auto;
 
-    @media (max-width: 1199.98px){
+    @media (max-width: 1199.98px) {
       flex: 1 0 auto;
       margin-bottom: 15px;
     }
   }
 
-  &__title{
+  &__title {
     font-weight: 700;
     font-size: 38px;
     line-height: 140%;
     color: #fff;
     margin-right: 42px;
 
-    @media (max-width: 1199.98px){
+    @media (max-width: 1199.98px) {
       margin-right: 0;
     }
   }
 
-  &__button{
+  &__link {
+    display: block;
     height: 65px;
     width: 245px;
     padding: 20px 30px;
@@ -67,78 +67,77 @@
     cursor: pointer;
     transition: 0.5s ease-out all;
 
-    @media (any-hover:hover){
-      &:hover{
+    @media (any-hover: hover) {
+      &:hover {
         transform: scale(0.9);
         color: #fff;
       }
     }
   }
 
-  &__list{
-    @media (max-width: 1199.98px){
+  &__list {
+    @media (max-width: 1199.98px) {
       display: flex;
       justify-content: space-around;
     }
 
-    @media (max-width: 575.98px){
+    @media (max-width: 575.98px) {
       display: none;
     }
   }
 
-  &__list-item{
+  &__list-item {
     font-size: 16px;
     color: #fff;
 
-    &:not(&:last-child){
+    &:not(&:last-child) {
       margin-bottom: 20px;
     }
 
-    @media (max-width: 1199.98px){
+    @media (max-width: 1199.98px) {
       flex: 0 0 30%;
-      
-      &:not(&:last-child){
+
+      &:not(&:last-child) {
         margin-bottom: 0;
       }
     }
   }
 }
 
-.hero-article{
-  &__title{
+.hero-article {
+  &__title {
     font-size: 32px;
     font-weight: 700;
     color: #fff;
     margin-bottom: 20px;
   }
 
-  &__cards{
+  &__cards {
     display: flex;
   }
 
-  &__card{
-    &:not(&:last-child){
+  &__card {
+    &:not(&:last-child) {
       margin-right: 25px;
     }
   }
 }
 
-.hero-card{
+.hero-card {
   display: flex;
   font-weight: 400;
 
-  &__count{
+  &__count {
     font-size: 128px;
     color: #fff;
     line-height: 80%;
     margin-right: 20px;
   }
 
-  &__descr{
+  &__descr {
     max-width: 116px;
     font-size: 20px;
     color: #fff;
     line-height: 140%;
-
   }
 }
