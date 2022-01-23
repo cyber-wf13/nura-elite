@@ -11,9 +11,11 @@
 @import 'components/title';
 @import 'components/title-back';
 @import 'components/about-descr';
+@import 'components/works-carousel';
 
 // Стили для шаблонов страниц
 @import 'layouts/header';
 @import 'layouts/footer';
 @import 'layouts/hero';
 @import 'layouts/about';
+@import 'layouts/works';

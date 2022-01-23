@@ -1,0 +1,12 @@
+.works{
+  background: rgba($c-accent, 0.05);
+  padding: 40px 0 45px;
+
+  @media (max-width: 575.98px){
+    padding: 20px 0 25px;
+  }
+
+  &__carousel{
+    margin-top: 28px;
+  }
+}

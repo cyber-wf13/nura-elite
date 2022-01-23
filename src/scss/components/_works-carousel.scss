@@ -1,0 +1,42 @@
+.carousel-works{
+
+  &__item-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before{
+      content: url(../img/works-dots.png);
+      position: absolute;
+      bottom: -30px;
+      left: -50px;
+      z-index: -1;
+
+    }
+
+    @media (max-width: 1199.98px){
+      flex-direction: column;
+
+      &::before{
+        content: none;
+        display: none;
+      }
+    }
+  }
+
+  &__schema{
+    margin-left: 68px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media (max-width: 1199.98px){
+      margin: 20px 0 0;
+    }
+  }
+
+  &__schema-title{
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+}
