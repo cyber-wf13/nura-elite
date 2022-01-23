@@ -7,5 +7,9 @@
   &__text{
     min-width: 423px;
     max-width: 617px;
+
+    @media (max-width: 575.98px){
+      min-width: 100%;
+    }
   }
 }

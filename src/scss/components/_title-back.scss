@@ -12,5 +12,9 @@
     font-size: 287px;
     line-height: 312px;
     color: rgba($c-black, 0.05);
+
+    @media (max-width: 991.98px){
+      display: none;
+    }
   }
 }
