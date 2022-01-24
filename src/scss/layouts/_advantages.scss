@@ -1,0 +1,93 @@
+.advantages {
+  position: relative;
+  padding: 60px 0 80px 100px;
+
+  &::after {
+    content: url(../img/advantages/advantages-dots.png);
+    position: absolute;
+    top: -60px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 77.43%;
+    z-index: -1;
+    background: url(../img/advantages/advantages-symbol.png) no-repeat bottom left/460px 628px, #f9f4f4;
+
+    @media (max-width: 991.98px) {
+      background: none, #f9f4f4;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    padding: 40px 0;
+  }
+
+  @media (max-width: 575.98px) {
+    padding: 20px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    max-width: 624px;
+  }
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    max-width: 832px;
+
+    @media (max-width: 991.98px) {
+      order: 1;
+    }
+  }
+
+  &__card {
+    margin-bottom: 40px;
+
+    @media (max-width: 767.98px) {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 575.98px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__center {
+    margin: 10px 0 55px;
+    @media (max-width: 991.98px) {
+      order: 3;
+      margin: 10px 0 0;
+    }
+  }
+
+  &__center-img {
+    width: 100%;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 807px;
+
+    @media (max-width: 991.98px) {
+      order: 2;
+    }
+  }
+}
