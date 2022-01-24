@@ -11,6 +11,8 @@
     font-weight: 700;
     font-size: 287px;
     line-height: 312px;
+    text-overflow: clip;
+    white-space: nowrap;
     color: rgba($c-black, 0.05);
 
     @media (max-width: 991.98px){
