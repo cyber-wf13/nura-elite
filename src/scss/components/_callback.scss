@@ -1,0 +1,24 @@
+.callback{
+  background-color: #fff;
+  border: 8px solid $c-accent;
+  border-radius: 8px;
+  padding: 70px;
+  text-align: center;
+
+  @media (max-width: 767.98px){
+    padding: 30px;
+  }
+
+  &__title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 133%;
+  }
+
+  &__descr{
+    display: inline-block;
+    font-size: 21px;
+    line-height: 1em;
+    padding: 12px 0 36px;
+  }
+}

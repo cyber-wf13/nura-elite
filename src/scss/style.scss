@@ -15,6 +15,9 @@
 @import 'components/card-advantages';
 @import 'components/reasons-card';
 @import 'components/card-tech';
+@import 'components/callback';
+@import 'components/form-callback';
+@import 'components/card-payment';
 
 // Стили для шаблонов страниц
 @import 'layouts/header';
@@ -26,3 +29,5 @@
 @import 'layouts/advantages';
 @import 'layouts/reasons';
 @import 'layouts/tech';
+@import 'layouts/callback-block';
+@import 'layouts/payment';

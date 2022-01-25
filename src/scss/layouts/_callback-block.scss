@@ -1,0 +1,15 @@
+.callback-block{
+  background: url(../img/symbol.png) no-repeat top right/auto;
+
+  @media (max-width: 1199.99px){
+    background: none;
+  }
+
+  &__payment{
+    padding: 150px 0 60px;
+
+    @media (max-width: 991.99px){
+      padding: 50px 0 30px;
+    }
+  }
+}
