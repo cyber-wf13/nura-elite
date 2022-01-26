@@ -132,6 +132,10 @@
     right: -1000px;
     height: 100%;
     z-index: 50;
+
+    &--active{
+      right: 0;
+    }
   }
 }
 
