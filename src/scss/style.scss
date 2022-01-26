@@ -7,6 +7,9 @@
 @import 'base/reset';
 @import 'base/fonts';
 
+// Подключение сторонних библиотек
+@import 'vendors/libs';
+
 // Стили для компонентов
 @import 'components/title';
 @import 'components/title-back';

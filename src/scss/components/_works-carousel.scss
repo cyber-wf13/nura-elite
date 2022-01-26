@@ -39,4 +39,27 @@
     font-size: 32px;
     margin-bottom: 10px;
   }
+
+  &__button{
+    background-color: $c-accent;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #fff;
+
+    @media (max-width: 575.98px){
+      top: auto;
+      bottom: 0;
+      height: 30px;
+      width: 30px;
+      font-size: 15px;
+    }
+
+    &::after{
+      content: none;
+      display: none;
+    }
+  }
 }
