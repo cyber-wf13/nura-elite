@@ -28,6 +28,8 @@
   }
 
   &__code{
+    max-width: 177px;
+    max-height: 177px;
     @media (max-width: 767.98px) {
       display: none;
     }

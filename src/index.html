@@ -4,6 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -14,7 +31,13 @@
 
 <body>
   <div class="hero">
-    <div class="container">
+    <div class="container hero__container">
+      <div class="hero__lines">
+        <hr class="hero__line">
+        <hr class="hero__line">
+        <hr class="hero__line">
+        <hr class="hero__line">
+      </div>
       <header class="header">
         <img src="img/logo.png" alt="Nura Elite" class="header__logo logo">
         <div class="header__items">
@@ -25,12 +48,12 @@
           </div>
           <nav class="nav">
             <ul class="menu">
-              <li class="menu__item"><a href="#" class="menu__link">О проекте</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Локация</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Преимущества</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Почему мы?</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Способы оплаты</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+              <li class="menu__item"><a href="#about" class="menu__link">О проекте</a></li>
+              <li class="menu__item"><a href="#location" class="menu__link">Локация</a></li>
+              <li class="menu__item"><a href="#advantages" class="menu__link">Преимущества</a></li>
+              <li class="menu__item"><a href="#reasons" class="menu__link">Почему мы?</a></li>
+              <li class="menu__item"><a href="#payment" class="menu__link">Способы оплаты</a></li>
+              <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
             </ul>
           </nav>
           <button class="header__burger"><i class="fas fa-bars"></i></button>
@@ -44,7 +67,8 @@
             <a class="hero-content__link" href="#">Скачать презентацию</a>
           </div>
           <ul class="hero-content__list">
-            <li class="hero-content__list-item"><b class="hero-content__list-accent">Строительные работы</b> начались в
+            <li class="hero-content__list-item"><b class="hero-content__list-accent">Строительные работы</b> начались
+              в
               сентября 2021 года.</li>
             <li class="hero-content__list-item"><b class="hero-content__list-accent">Срок сдачи</b> коттеджей - I
               квартал 2022 года</li>
@@ -70,7 +94,7 @@
   </div>
 
   <main class="main">
-    <section class="about" id="#about">
+    <section class="about" id="about">
       <div class="container">
         <h2 class="about__title title title-back" data-back-title="О проекте">О проекте</h2>
         <div class="about__wrapper">
@@ -136,7 +160,7 @@
       </div>
     </section>
 
-    <section class="location">
+    <section class="location" id="location">
       <div class="container">
         <div class="location__wrapper">
           <div class="location__descr">
@@ -154,7 +178,7 @@
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <div class="container">
         <div class="advantages__wrapper">
           <h2 class="advantages__title title">Основные преимущества городка</h2>
@@ -205,7 +229,7 @@
       </div>
     </section>
 
-    <section class="reasons">
+    <section class="reasons" id="reasons">
       <h2 class="reasons__title title title-back" data-back-title="Почему NURA ELITE?">Почему NURA ELITE?</h2>
       <div class="container reasons__container">
         <div class="reasons__wrapper">
@@ -252,7 +276,7 @@
       </div>
     </section>
 
-    <section class="tech">
+    <section class="tech" id="tech">
       <h2 class="tech__title title title-back" data-back-title="Технология строения">Технология строения</h2>
 
       <div class="container">
@@ -336,7 +360,7 @@
           </form>
         </div>
 
-        <div class="callback-block__payment payment">
+        <div class="callback-block__payment payment" id="payment">
           <h2 class="payment__title title title-back" data-back-title="Оплата">Способы оплаты</h2>
           <div class="payment__content">
             <div class="payment__card card-payment">
@@ -372,7 +396,7 @@
         <div class="footer__content">
           <h2 class="footer__title title">Контакты</h2>
           <span class="footer__descr">ул. Кунаева 10, БЦ “Изумрудный”, блок - А, этаж 1</span>
-          <div class="footer__contacts">
+          <div class="footer__contacts" id="contacts">
             <ul class="footer__list footer-list">
               <li class="footer-list__item"><a href="tel:+77000011888" class="footer-list__link"><i
                     class="fas fa-phone-alt"></i>+7 (700) 001-18-88</a></li>
@@ -381,7 +405,7 @@
               <li class="footer-list__item"><a href="https://www.instagram.com" class="footer-list__link"
                   target="blank"><i class="fab fa-instagram"></i>@nura.premier</a></li>
             </ul>
-            <img src="img/footerQR.jpg" alt="QR" class="footer__code">
+            <img src="img/footerQR.png" alt="QR" class="footer__code">
           </div>
           <button class="footer__button">Посмотреть на карте</button>
         </div>
@@ -389,10 +413,10 @@
 
       <nav class="footer__nav">
         <ul class="footer__nav-list">
-          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Преимущества</a></li>
-          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Почему мы?</a></li>
-          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Технологии</a></li>
-          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Способы оплаты</a></li>
+          <li class="footer__nav-item"><a href="#advantages" class="footer__nav-link">Преимущества</a></li>
+          <li class="footer__nav-item"><a href="#reasons" class="footer__nav-link">Почему мы?</a></li>
+          <li class="footer__nav-item"><a href="#tech" class="footer__nav-link">Технологии</a></li>
+          <li class="footer__nav-item"><a href="#payment" class="footer__nav-link">Способы оплаты</a></li>
         </ul>
       </nav>
     </div>
