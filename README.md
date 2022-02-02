@@ -1,5 +1,5 @@
-# Название сайта
-\#Тренировочный/проект \#HTML5 \#SCSS/CSS \#JS/ES6+
+# Nura Elite
+\#Тренировочный \#HTML5 \#SCSS/CSS \#JS/ES6+
 
 [**Перейти на сайт**](https://cyber-wf13.github.io/nura-elite/)
 
